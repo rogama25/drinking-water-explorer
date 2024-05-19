@@ -1,7 +1,25 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within{
+  scroll-behavior: smooth;
+}
+
+.leaflet-bar button {
+  height: 34px; /* easyButton's height default */
+  width: 34px;  /*  easyButton's width default */
+}
+
 #app {
   height: 100%;
 }
 
 body, html {
-  height: 100%;
+  height: 100dvh;
 }

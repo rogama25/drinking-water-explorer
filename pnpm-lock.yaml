@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fortawesome/fontawesome-free':
+    specifier: ^6.5.2
+    version: 6.5.2
   leaflet:
     specifier: ^1.9.4
     version: 1.9.4
+  leaflet-easybutton:
+    specifier: ^2.4.0
+    version: 2.4.0
   leaflet.locatecontrol:
     specifier: ^0.81.0
     version: 0.81.0
@@ -238,6 +244,12 @@ packages:
     dev: true
     optional: true
 
+  /@fortawesome/fontawesome-free@6.5.2:
+    resolution: {integrity: sha512-hRILoInAx8GNT5IMkrtIt9blOdrqHOnPBH+k70aWUAqPZPgopb9G5EQJFpaBx/S8zp2fC+mPW349Bziuk1o28Q==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
   /@rollup/rollup-android-arm-eabi@4.17.2:
     resolution: {integrity: sha512-NM0jFxY8bB8QLkoKxIQeObCaDlJKewVlIEkuyYKm5An1tdVZ966w2+MPQ2l8LBZLjR+SgyV+nRkTIunzOYBMLQ==}
     cpu: [arm]
@@ -433,6 +445,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /leaflet-easybutton@2.4.0:
+    resolution: {integrity: sha512-O+qsQq4zTF6ds8VClnytobTH/MKalctlPpiA8L+bNKHP14J3lgJpvEd/jSpq9mHTI6qOzRAvbQX6wS6qNwThvg==}
+    dependencies:
+      leaflet: 1.9.4
+    dev: false
 
   /leaflet.locatecontrol@0.81.0:
     resolution: {integrity: sha512-5Dqj6VXVFl1vPquYZW95hQYegvzqSI4eLIpZrBMuHuyoAo5i9y6js3z02TF//XXZByIyTI/XBtlxlZLUM08Pcg==}
