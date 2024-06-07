@@ -12,14 +12,36 @@ html:focus-within{
 }
 
 .leaflet-bar button {
-  height: 34px; /* easyButton's height default */
-  width: 34px;  /*  easyButton's width default */
+  height: 30px; /* easyButton's height default */
+  width: 30px;  /*  easyButton's width default */
 }
 
-#app {
-  height: 100%;
+#map {
+  flex-grow: 1;
 }
 
 body, html {
   height: 100dvh;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.33rem;
+}
+
+#topBar {
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#helpButton {
+  background: white;
+  border: black 2px solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
 }

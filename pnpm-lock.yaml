@@ -17,6 +17,9 @@ dependencies:
   leaflet.locatecontrol:
     specifier: ^0.81.0
     version: 0.81.0
+  micromodal:
+    specifier: ^0.4.10
+    version: 0.4.10
 
 devDependencies:
   '@types/leaflet':
@@ -25,6 +28,9 @@ devDependencies:
   '@types/leaflet.locatecontrol':
     specifier: ^0.74.5
     version: 0.74.5
+  '@types/micromodal':
+    specifier: ^0.3.5
+    version: 0.3.5
   '@vitejs/plugin-basic-ssl':
     specifier: ^1.1.0
     version: 1.1.0(vite@5.2.11)
@@ -398,6 +404,10 @@ packages:
       '@types/geojson': 7946.0.14
     dev: true
 
+  /@types/micromodal@0.3.5:
+    resolution: {integrity: sha512-xDref7Vyx0nhfJWpeEkVrSb5l1GuHIyxfePxuHSTP3eW587Qe3hzKcBy0V+1Wjuyh21UhJH46eP43czH2ZRpGw==}
+    dev: true
+
   /@vitejs/plugin-basic-ssl@1.1.0(vite@5.2.11):
     resolution: {integrity: sha512-wO4Dk/rm8u7RNhOf95ZzcEmC9rYOncYgvq4z3duaJrCgjN8BxAnDVyndanfcJZ0O6XZzHz6Q0hTimxTg8Y9g/A==}
     engines: {node: '>=14.6.0'}
@@ -458,6 +468,11 @@ packages:
 
   /leaflet@1.9.4:
     resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
+    dev: false
+
+  /micromodal@0.4.10:
+    resolution: {integrity: sha512-BUrEnzMPFBwK8nOE4xUDYHLrlGlLULQVjpja99tpJQPSUEWgw3kTLp1n1qv0HmKU29AiHE7Y7sMLiRziDK4ghQ==}
+    engines: {node: '>=10'}
     dev: false
 
   /nanoid@3.3.7:

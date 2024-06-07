@@ -1,13 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/icon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Drinking water explorer</title>
+    <script type="module" src="/src/map.ts" defer></script>
+    <script type="module" src="/src/help.ts" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div id="topBar">
+    <h1>Drinking water explorer</h1>
+    <button id="helpButton" data-micromodal-trigger="modal-help">Help</button>
+</div>
+<div id="map"></div>
+<div id="modal-help" class="modal micromodal-slide">
+    <div tabindex="-1" data-micromodal-close class="modal__overlay">
+        <div role="dialog" aria-modal="true" aria-labelledby="modal-help-title" class="modal__container">
+            <header class="modal__header">
+                <h2 id="modal-help-title" class="modal__title">
+                    Help
+                </h2>
+                <!-- [4] -->
+                <button aria-label="Close modal" data-micromodal-close class="modal__close"></button>
+            </header>
+            <div id="modal-help-content" class="modal__content">
+                You can search for drinking water around you in 2km area clicking the arrow icon,
+                or you can search around another spot placing it in the centre of the map
+                and then clicking the magnifying glass icon.
+                <hr>
+                Source code available on <a href="https://github.com/rogama25/drinking-water-explorer">Github</a>.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
