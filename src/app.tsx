@@ -1,6 +1,4 @@
 import {Map} from "./assets/components/Map.tsx";
-import {Fragment} from "preact";
-import {Icon} from "@iconify/react";
 import {ToastContainer} from "react-toastify";
 import HelpPopover from "./assets/components/HelpPopover.tsx";
 
